@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="Assessment.css">
+</head>
+<body>
+<div class="home custom-box">
+    <div class="first">
+        <h1>Enter the below described details:</h1><br>
+        <label for="name">UserName:* </label><br>
+        <input type="text" id="uname" class="usname" required><br>
+        <label for="email">E-mail ID:* </label><br>
+        <input type="email" id="e-mail" class="email" required><br>
+    </div>
+    <h3>Instructions:</h3>
+    <p>Total number of questions:<span class="total-questions"></span></p>
+    <button type="button" class="start" id="start-btn" onclick="startQuiz()">Start Quiz</button>
+
+</div>
+
+<div class="quiz-box custom-box hide">
+    <div class="question-numbers"></div>
+<div class="question-text"></div>
+<div class="option-container">
+</div>
+<div class="next-btn"><button type="button" class="next-btn" onclick="next()">Next
+</button>
+
+</div>
+</div>
+    <div class="result-box custom-box hide">
+        <h1 class="result">Quiz Result</h1>
+        <table>
+            <tr>
+                <td>Total Questions</td>
+                <td><span class="total-questions"></span></td>
+            </tr>
+            <tr>
+                <td>Attempt</td>
+                <td><span class="total-attempt"></span></td>
+            </tr>
+            <tr>
+                <td>Correct</td>
+                <td><span class="total-correct"></span></td>
+            </tr>
+            <tr>
+                <td>Wrong</td>
+                <td><span class="total-wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Percentage</td>
+                <td><span class="percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Total Score</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+        </table>
+            <button id="try-btn" class="try-again" onclick="tryAgainQuiz()">Try Again</button>
+            <button id="go-to-btn" class="go-to-home" onclick="goToHome()">Go To Home</button>
+    </div>
+    <script src="Assessment1.js"></script>
+    <script src="Assessment2.js"></script>
+</body>
+</html>
